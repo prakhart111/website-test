@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "../styles/globals.css";
+// import soon from "../public/images/soon.jpg"
 
 export default function RootLayout({
   children,
@@ -23,6 +24,7 @@ export default function RootLayout({
         <p className="text-slate-300">Welcome to our website.</p>
         <p className="text-slate-300"> We're building it asap and it'll be live soon💻</p>
       </div>
+      <Image src="/images/soon.jpg" alt="coming soon" width={400} height={400} className="mx-auto" />
     </header>
   );
 
